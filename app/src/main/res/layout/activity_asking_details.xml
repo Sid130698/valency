@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskingDetails">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/valency_details_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:id="@+id/valencyDetailsLogo"/>
+
+    <TextView
+        android:id="@+id/enterYourNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Enter your Name"
+        android:textColor="@color/primary"
+        android:textSize="26dp" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:textColor="#000000"
+        android:id="@+id/userNameEditText"
+        android:layout_below="@id/enterYourNameTextView"
+        android:textSize="24sp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        android:gravity="center"
+        android:inputType="text"
+
+        android:background="@drawable/number_input_bakcground"/>
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameEditText"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Gender"
+        android:textColor="@color/primary"
+        android:textSize="26dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/genderTextView"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/genderRadioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:id="@+id/genderMaleRadioButton"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="Female"
+            android:textSize="24sp"
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/genderFemaleRadioButton"
+            android:textColor="#000000"
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:textSize="26dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/primary"
+        android:text="Date of Birth"
+        android:id="@+id/dateOfBirthTextView"
+        android:layout_below="@id/genderRadioGroup"
+        android:layout_marginTop="12dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dateOfBirthTextView"
+        android:gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/dateOfBirthLinearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2000"
+            android:id="@+id/dateOfBirthChangeTextView"
+            android:textSize="26sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#000000"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="24dp"
+            android:textSize="14sp"
+            android:id="@+id/dateOfBirthButton"
+            android:background="@drawable/button_background"
+            android:text="Click to change date"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="SUBMIT"
+        android:padding="13dp"
+
+        android:id="@+id/detailsSubmitButton"
+        android:layout_below="@id/dateOfBirthLinearLayout"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>

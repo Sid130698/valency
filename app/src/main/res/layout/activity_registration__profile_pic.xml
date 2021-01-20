@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration_ProfilePicActivity">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profilePicFrameLayout"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/user_icon"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/userProfilePicImageView"
+            android:layout_marginTop="100dp"/>
+
+        <ImageView
+            android:id="@+id/selectProfilePicImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/camera_border"
+            android:elevation="10dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_below="@id/profilePicFrameLayout"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Please Select Your Profile Picture"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:text="Skip>>>"
+        android:id="@+id/nextSkipTextView"
+        android:layout_marginRight="35dp"
+        android:textSize="26sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

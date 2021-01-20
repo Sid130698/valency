@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402360379884",
+    "project_id": "valency0-1",
+    "storage_bucket": "valency0-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402360379884:android:3ef1d22d7bb7344f14b8c9",
+        "android_client_info": {
+          "package_name": "com.example.valency01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402360379884-ti8ohmdajed9kafqvg9mtvsicr9m0tmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdIwMMlTVOg8Xx4kNn36wRqlVwQCUfhNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402360379884-ti8ohmdajed9kafqvg9mtvsicr9m0tmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

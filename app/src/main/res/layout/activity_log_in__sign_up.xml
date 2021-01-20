@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn_SignUpActivity"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/valency_logos"
+        android:layout_alignParentTop="true"
+        android:id="@+id/valencyLogo"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/enterYourphoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Enter your phone number"
+        android:textSize="29sp"
+        android:layout_margin="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/valencyLogo"
+        android:textColor="@color/primary"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/enterYourphoneNumberTextView"
+        android:id="@+id/enterNumberLinearLayout"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:layout_centerHorizontal="true"
+        >
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/spinnerNumberEditText"
+            android:gravity="center"
+            android:autofillHints="Select your country"
+
+            android:layout_below="@id/enterYourphoneNumberTextView"
+            android:background="@drawable/number_input_bakcground"
+            android:layout_marginBottom="12dp"/>
+        <EditText
+            android:layout_width="320dp"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:hint="Enter your number"
+            android:maxLength="10"
+            android:id="@+id/numberEditText"
+            android:layout_below="@id/enterYourphoneNumberTextView"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/number_input_bakcground"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_margin="12dp"
+        android:id="@+id/nextButtonAfterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterNumberLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:text="Next"/>
+
+
+
+</RelativeLayout>
