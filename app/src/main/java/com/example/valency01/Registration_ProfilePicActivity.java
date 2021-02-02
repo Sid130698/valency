@@ -73,7 +73,9 @@ public class Registration_ProfilePicActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if(task.isSuccessful()){
-                                    Toast.makeText(Registration_ProfilePicActivity.this, "Done!!!", Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(Registration_ProfilePicActivity.this, "Done!!!", Toast.LENGTH_SHORT).show();
+                                      startActivity(new Intent(Registration_ProfilePicActivity.this,HomeActivity.class));
+                                      finish();
                                 }
                                 else{
                                     Toast.makeText(Registration_ProfilePicActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
