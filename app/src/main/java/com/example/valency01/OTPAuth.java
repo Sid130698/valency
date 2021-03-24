@@ -48,7 +48,7 @@ FirebaseAuth firebaseAuth;
             public void onClick(View view) {
 
                 String OTPentered=OtpBox1.getText().toString()+OtpBox2.getText().toString()+OtpBox3.getText().toString()+OtpBox4.getText().toString()+OtpBox5.getText().toString()+OtpBox6.getText().toString();
-                Toast.makeText(OTPAuth.this, "work bsdk"+OTPentered, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(OTPAuth.this, "work bsdk"+OTPentered, Toast.LENGTH_SHORT).show();
                 verifyOTP(OTPentered);
 
             }
@@ -74,7 +74,7 @@ FirebaseAuth firebaseAuth;
                     OtpBox6.setText(Character.toString(OTP.charAt(5)));
 
 
-                    Toast.makeText(OTPAuth.this, "recieved bsdk" + OTP, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(OTPAuth.this, "otp recieved" + OTP, Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     Toast.makeText(OTPAuth.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
@@ -138,8 +138,8 @@ FirebaseAuth firebaseAuth;
 
 
                 }
-                else
-                    Toast.makeText(OTPAuth.this, "!!!!!!!!!!!!!!!!!!BSDK!!!!!!!!!!!!!!!!!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+//                else
+//                    Toast.makeText(OTPAuth.this, "!!!!!!!!!!!!!!!!!!BSDK!!!!!!!!!!!!!!!!!"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
